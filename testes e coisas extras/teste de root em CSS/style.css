@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+:root{
+    --cor0: white;
+    --cor1: rgb(52, 139, 52);
+    --cor2: lightblue;
+    --font1: cursive;
+}
+
+
+h1{
+   background-image: linear-gradient(to right, var(--cor2), var(--cor1));
+}
+p{
+    font-family: var(--font1);
+}

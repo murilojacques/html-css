@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        h1 {
+            border-width: 3px;  
+            border-style: solid; 
+            border-color: rgb(0, 0, 0);
+          /* short-hand para borda
+
+           border: 3px solid black;
+           */
+
+
+            border-radius: 15px;
+            display: block;
+
+            padding-left: 10px;
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            /* short-hand preenchimento (top -> right -> bottom -> left)
+
+            padding: 10px 10px 10px 10px;
+            */
+
+
+            height: 45px;
+            width: 390px;
+
+            margin: auto; /*deixar a caixa centralizada no navegador*/
+
+            /*   definir cada lado separadamente de acordo com a situação
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+
+            short-hand
+            margin: 10px 10px 10px 10px;
+
+            margem geral (para todos os lados)
+            margin: 10px;
+            */
+
+            color: rgb(0, 0, 0);
+            background-color: rgb(255, 255, 255);
+
+            outline-width: 2px;
+            outline-style: solid;
+            outline-color: rgb(255, 208, 0);
+            /* short-hand para outline
+            
+            outline: 2px solid yellow;
+            */
+        }
+
+        body{
+            background-color: darkgray;
+            text-align: left;
+        }
+
+        div{
+            margin: 12px;
+            background-color: rgb(0, 255, 89);
+            border: 10px;
+            width: 45px;
+            height: 20px;
+            padding: 2px;
+            border-radius: 5px;
+        }
+
+        span{
+            background-color: lightblue;
+            border: 10px;
+            width: 45px;
+            height: 20px;
+            padding: 2px;
+            border-radius: 5px;
+        }
+
+        a{
+            border-style: dashed;
+            border-width: 2px;
+            border-color: gold;
+            border-radius: 4px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Exemplo de caixas box-level</h1>
+    <p>paragrafos tbm são exemplos de box-level, mas os <a href="#">links são esxemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona</p>
+    <br>
+    <p>e aí meus <div>manos,</div> tudo <span>bom?</span></p>
+</body>
+</html>
