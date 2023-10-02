@@ -41,3 +41,49 @@ header a:hover{
     text-decoration: underline;
     color: white;
 }
+
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+section.imagem{
+    background-color: rgb(51, 51, 51);
+    color: white;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    display: block;
+    font-size: 3.5vh;
+    box-shadow: inset 5px 5px 13px rgba(0, 0, 0, 0.377);
+
+}
+
+section.imagem > p{
+    background-color: rgba(0, 0, 0, 0.582);
+    padding-left: 10px;
+    width: 450px;
+    display: inline-block;
+
+}
+
+
+section#img01{
+    background-image: url(imagens/Girassol-3.webp);
+    background-position: right bottom;
+}
+
+section#img02{
+    background-image: url(imagens/R.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+.normal{
+   padding-top: 10px;
+}
+
