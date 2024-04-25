@@ -1,0 +1,239 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --fonte_Padrao: Verdana;
+    --fonte_Destaque: 'MV Boli';
+
+    --cor1: #3778d9;
+    --cor2: #408508;;
+    --cor3: #d4a90c;
+    --cor4: #cc1717;
+}
+
+
+/*--------------------------------- tags -----------------------------*/
+header{
+    height: 210px;
+    background-image: url(Imagens_Senac_HTML_2/Banner_Medio.png);
+    background-attachment: fixed;
+    background-position: top center;
+    text-align: center;
+}
+
+h1{
+    padding-top: 50px;
+    text-align: center;
+    font-size: 50px;
+    font-family: var(--fonte_Destaque);
+    text-shadow: 2px 2px 1px rgba(255, 255, 255, 0.822);
+}
+
+body{
+    font-family: var(--fonte_Padrao);
+}
+
+section{
+    margin: auto;
+    margin-top: 20px;
+    width: 900px;
+    height: 400px;
+    border-style:solid;
+    border-width: 1px;
+    border-radius: 5px;
+    background-color: gray;
+}
+
+div{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+div > p{
+    margin: auto;
+    text-align: center;
+    padding-left: 15px;
+    font-size: 16px;
+}
+
+h3{
+    margin-top: 5px;
+    text-indent: 25px;
+    margin-bottom: 10px;
+    color: white;
+    font-size:20px;
+}
+
+p{
+    display: inline;
+    margin-left: 10px;
+    margin-bottom: 25px;
+    padding-left: 10px;
+    text-align: justify;
+    color: white;
+}
+
+main{
+    background-image: url(Imagens_Senac_HTML_2/Background_Banner.png);
+    background-attachment: fixed; 
+}
+
+a{
+    color: blue;
+    background-color: white;
+    position: absolute;
+    font-size: 22px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-left: 720px;
+}
+
+/*--------------------------------- tags -----------------------------*/
+
+
+
+
+/*--------------------------------- Classes -----------------------------*/
+.Carrossel{
+    width: 900px;
+    height: 450px;
+    margin-top: 25px;
+    margin: auto;
+}
+
+.imagem{
+    
+    width: 460px;
+    height: 326px;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+.imagem_inversa{
+    display: block;
+    position: absolute;
+    margin-left: 435px;
+    margin-top: 15px;
+}
+
+.texto_inverso{
+    position: absolute;
+    display: block;
+    margin-top: 15px;
+    margin-left: 25px;
+    width: 400px;
+    height: 300px;
+    border-style:solid;
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+.texto{
+    
+    width: 400px;
+    height: 300px;
+    margin-left: 475px;
+    margin-top: 15px;
+    display: block;
+    
+    border-style:solid;
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+section.SecaoComentarios >h3{
+    font-size: 25px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.Comentarios{
+    width: 780px;
+    height: 90px;
+    align-content: normal;
+    margin: auto;
+    margin-top: 20px;
+    border-style:solid;
+    border-width: 1px;
+    border-radius: 5px;
+    background-color: lightgray;
+    display: block;
+}
+
+div.Comentarios > p{
+    display: inline;
+    margin-left: 10px;
+    margin-bottom: 25px;
+    padding-left: 10px;
+    text-align: justify;
+    color: black;
+    max-width: 500px;
+    max-height: 45px;
+}
+
+div.Comentarios > img{
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 20px;
+    display: inline;
+}
+
+.Titulos{
+    color: white;
+    background-color: var(--cor2);
+    
+}
+
+
+
+
+
+/*--------------------------------- Classes -----------------------------*/
+
+
+
+
+
+
+/*--------------------------------- ID -----------------------------*/
+#Topico1{
+    background-color: var(--cor1);
+}
+
+#Topico2{
+    background-color: var(--cor3);
+}
+
+#Topico3{
+    background-color: var(--cor1);
+}
+
+#Topico4{
+    background-color: var(--cor4);
+}
+
+#link_inverso{
+    color: rgb(0, 0, 255);
+    background-color: white;
+    position: absolute;
+    font-size: 22px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 345px;
+    margin-left: 35px;
+}
+
+/*--------------------------------- ID -----------------------------*/
