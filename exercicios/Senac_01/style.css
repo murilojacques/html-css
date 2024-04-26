@@ -25,6 +25,12 @@ header{
     text-align: center;
 }
 
+nav{
+    position: absolute;
+    
+    width: 400px;
+}
+
 h1{
     padding-top: 50px;
     text-align: center;
@@ -33,31 +39,16 @@ h1{
     text-shadow: 2px 2px 1px rgba(255, 255, 255, 0.822);
 }
 
-body{
-    font-family: var(--fonte_Padrao);
-}
-
-section{
-    margin: auto;
-    margin-top: 20px;
-    width: 900px;
-    height: 400px;
-    border-style:solid;
-    border-width: 1px;
+h2{
+    color: white;
+    background-color: var(--cor2);
+    margin-top: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 35px;
+    max-width: 500px;
     border-radius: 5px;
-    background-color: gray;
-}
-
-div{
-    padding-left: 5px;
-    padding-right: 5px;
-}
-
-div > p{
-    margin: auto;
     text-align: center;
-    padding-left: 15px;
-    font-size: 16px;
 }
 
 h3{
@@ -65,21 +56,55 @@ h3{
     text-indent: 25px;
     margin-bottom: 10px;
     color: white;
-    font-size:20px;
+    font-size:25px;
+}
+
+body{
+    font-family: var(--fonte_Padrao);
+    background-image: url(Imagens_Senac_HTML_2/Background_Banner.png);
+    background-attachment: fixed; 
+}
+
+section{
+    margin: auto;
+    margin-top: 20px;
+    width: 1500px;
+    height: 400px;
+    border-style:solid;
+    border-width: 1px;
+    border-radius: 5px;
+    background-color: gray;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.432);
+}
+
+div{
+    padding-left: 5px;
+    padding-right: 5px;
+    
+}
+
+div > p{
+    margin: auto;
+    text-align: left;
+    padding-left: 15px;
+    font-size: 22px;
 }
 
 p{
-    display: inline;
+    display: block;
     margin-left: 10px;
     margin-bottom: 25px;
     padding-left: 10px;
-    text-align: justify;
+    padding-right: 10px;
+    text-align: left;
+    font-size: 22px;
     color: white;
 }
 
 main{
-    background-image: url(Imagens_Senac_HTML_2/Background_Banner.png);
-    background-attachment: fixed; 
+    max-width: 1500px;
+    margin: auto;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.651);
 }
 
 a{
@@ -93,8 +118,10 @@ a{
     padding-right: 10px;
     border-radius: 5px;
     margin-top: 30px;
-    margin-left: 720px;
+    margin-left: 1300px;
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.651);
 }
+
 
 /*--------------------------------- tags -----------------------------*/
 
@@ -103,7 +130,7 @@ a{
 
 /*--------------------------------- Classes -----------------------------*/
 .Carrossel{
-    width: 900px;
+    width: 1100px;
     height: 450px;
     margin-top: 25px;
     margin: auto;
@@ -138,10 +165,10 @@ a{
 }
 
 .texto{
-    
-    width: 400px;
+    line-height: 1.8em;
+    width: 800px;
     height: 300px;
-    margin-left: 475px;
+    margin-left: 490px;
     margin-top: 15px;
     display: block;
     
@@ -156,16 +183,17 @@ section.SecaoComentarios >h3{
     margin-left: 20px;
 }
 .Comentarios{
-    width: 780px;
+    width: 1300px;
     height: 90px;
     align-content: normal;
-    margin: auto;
+    margin-left: 100px;
     margin-top: 20px;
     border-style:solid;
     border-width: 1px;
     border-radius: 5px;
     background-color: lightgray;
     display: block;
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.651);
 }
 
 div.Comentarios > p{
@@ -186,14 +214,6 @@ div.Comentarios > img{
     margin-left: 20px;
     display: inline;
 }
-
-.Titulos{
-    color: white;
-    background-color: var(--cor2);
-    
-}
-
-
 
 
 
