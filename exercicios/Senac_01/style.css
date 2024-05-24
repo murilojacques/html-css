@@ -18,8 +18,8 @@
 
 /*--------------------------------- tags -----------------------------*/
 header{
-    height: 210px;
-    background-image: url(Imagens_Senac_HTML_2/Banner_Medio.png);
+    height: 92px;
+    background-image: url(Imagens_Senac_HTML_2/new\ _Banner.png);
     background-attachment: fixed;
     background-position: top center;
     text-align: center;
@@ -32,7 +32,7 @@ nav{
 }
 
 h1{
-    padding-top: 50px;
+    padding-top: 10px;
     text-align: center;
     font-size: 50px;
     font-family: var(--fonte_Destaque);
@@ -45,31 +45,33 @@ h2{
     margin-top: 25px;
     padding-top: 10px;
     padding-bottom: 10px;
-    font-size: 35px;
+    font-size: 32px;
     max-width: 500px;
     border-radius: 5px;
     text-align: center;
 }
 
 h3{
-    margin-top: 5px;
-    text-indent: 25px;
-    margin-bottom: 10px;
+    margin-top: 7px;
+    text-indent: 12px;
+    margin-bottom: 12px;
     color: white;
-    font-size:25px;
+    font-size:22px;
 }
 
 body{
     font-family: var(--fonte_Padrao);
     background-image: url(Imagens_Senac_HTML_2/Background_Banner.png);
     background-attachment: fixed; 
+   /* width: 1920px;
+    height: 1080px;*/
 }
 
 section{
-    margin: auto;
-    margin-top: 20px;
-    width: 1500px;
-    height: 400px;
+
+    margin-top: 10px;
+    width: 593px;
+    height: 221px;
     border-style:solid;
     border-width: 1px;
     border-radius: 5px;
@@ -87,7 +89,7 @@ div > p{
     margin: auto;
     text-align: left;
     padding-left: 15px;
-    font-size: 22px;
+    font-size: 16px;
 }
 
 p{
@@ -97,7 +99,7 @@ p{
     padding-left: 10px;
     padding-right: 10px;
     text-align: left;
-    font-size: 22px;
+    font-size: 16px;
     color: white;
 }
 
@@ -130,61 +132,67 @@ a{
 
 /*--------------------------------- Classes -----------------------------*/
 .Carrossel{
-    width: 1100px;
-    height: 450px;
-    margin-top: 25px;
-    margin: auto;
+    width: 411x;
+    height: 200px;
+    padding-top: 10px;
+    margin-left: 36%;
 }
 
 .imagem{
     
-    width: 460px;
-    height: 326px;
+    width: 278px;
+    height: 200px;
     position: absolute;
-    margin-top: 15px;
-    margin-left: 5px;
+    margin-top: 12px;
+    margin-left: 2px;
 }
 
-.imagem_inversa{
+
+/*.imagem_inversa{
     display: block;
     position: absolute;
     margin-left: 435px;
     margin-top: 15px;
-}
+}*/
 
-.texto_inverso{
+/*.texto_inverso{
     position: absolute;
     display: block;
     margin-top: 15px;
     margin-left: 25px;
-    width: 400px;
-    height: 300px;
+    width: 285px;
+    height: 130px;
     border-style:solid;
     border-width: 1px;
     border-radius: 5px;
-}
+}*/
 
 .texto{
-    line-height: 1.8em;
-    width: 800px;
-    height: 300px;
-    margin-left: 490px;
-    margin-top: 15px;
+    line-height: 1em;
+    width: 285px;
+    height: 180px;
+    margin-left: 290px;
+    margin-top: 2px;
     display: block;
     
     border-style:solid;
     border-width: 1px;
     border-radius: 5px;
+}
+
+.SecaoComentarios{
+    height: 250px;
 }
 
 section.SecaoComentarios >h3{
     font-size: 25px;
     margin-top: 10px;
     margin-left: 20px;
+    
 }
 .Comentarios{
     width: 1300px;
-    height: 90px;
+    height: 45px;
     align-content: normal;
     margin-left: 100px;
     margin-top: 20px;
@@ -197,17 +205,19 @@ section.SecaoComentarios >h3{
 }
 
 div.Comentarios > p{
+    position: absolute;
     display: inline;
-    margin-left: 10px;
+    margin-left: 80px;
     margin-bottom: 25px;
     padding-left: 10px;
     text-align: justify;
     color: black;
-    max-width: 500px;
-    max-height: 45px;
+    max-width: 1000px;
+    max-height: 20px;
 }
 
 div.Comentarios > img{
+    position: absolute;
     width: 40px;
     height: 40px;
     margin-top: 10px;
@@ -225,20 +235,36 @@ div.Comentarios > img{
 
 
 /*--------------------------------- ID -----------------------------*/
-#Topico1{
+#Apresentacao{
     background-color: var(--cor1);
+    width: 1200px;
+    height: 100px;
+    margin: auto;
+    margin-top: 10px;
+    
 }
 
-#Topico2{
+
+#T1{
     background-color: var(--cor3);
+    display: block;
+    position: absolute;
+    margin-left: -10px;
 }
 
-#Topico3{
+#T2{
     background-color: var(--cor1);
+    display: inline-block;
+    position: absolute;
+    margin-left: 585px;
+
 }
 
-#Topico4{
+#T3{
     background-color: var(--cor4);
+    display: block;
+    margin-left: 1175px;
+    
 }
 
 #link_inverso{
