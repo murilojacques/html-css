@@ -3,6 +3,8 @@
 *{
     margin: 0px;
     padding: 0px;
+    max-width: 1920px;
+    max-height: 1080px;
 }
 
 :root{
@@ -18,21 +20,21 @@
 
 /*--------------------------------- tags -----------------------------*/
 header{
-    height: 92px;
+    height: 85px;
     background-image: url(Imagens_Senac_HTML_2/new\ _Banner.png);
     background-attachment: fixed;
     background-position: top center;
-    text-align: center;
 }
 
 nav{
-    position: absolute;
-    
+    display: inline-block;
+    height: 25px;
     width: 400px;
+    border-style: solid;
+    border-color: #cc1717;
 }
 
 h1{
-    padding-top: 10px;
     text-align: center;
     font-size: 50px;
     font-family: var(--fonte_Destaque);
@@ -56,21 +58,23 @@ h3{
     text-indent: 12px;
     margin-bottom: 12px;
     color: white;
-    font-size:22px;
+    font-size:20px;
 }
 
 body{
     font-family: var(--fonte_Padrao);
     background-image: url(Imagens_Senac_HTML_2/Background_Banner.png);
-    background-attachment: fixed; 
+    background-attachment: fixed;
+    max-width: 1920px;
+    max-height: 1080px; 
    /* width: 1920px;
     height: 1080px;*/
 }
 
 section{
-
+    margin: auto;
     margin-top: 10px;
-    width: 593px;
+    width: 570px;
     height: 221px;
     border-style:solid;
     border-width: 1px;
@@ -89,7 +93,7 @@ div > p{
     margin: auto;
     text-align: left;
     padding-left: 15px;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 p{
@@ -104,8 +108,7 @@ p{
 }
 
 main{
-    max-width: 1500px;
-    margin: auto;
+    max-width: 1920px;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.651);
 }
 
@@ -113,14 +116,14 @@ a{
     color: blue;
     background-color: white;
     position: absolute;
-    font-size: 22px;
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-bottom: 10px;
-    padding-right: 10px;
+    font-size: 15px;
+    padding-top: 0px;
+    padding-left: 3px;
+    padding-bottom: 3px;
+    padding-right: 3px;
     border-radius: 5px;
-    margin-top: 30px;
-    margin-left: 1300px;
+    margin-top: 4px;
+    margin-left: 455px;
     text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.651);
 }
 
@@ -131,11 +134,16 @@ a{
 
 
 /*--------------------------------- Classes -----------------------------*/
+.links_Header a{
+    position: absolute;
+    margin-left: auto;
+}
+
 .Carrossel{
     width: 411x;
     height: 200px;
     padding-top: 10px;
-    margin-left: 36%;
+    margin-left: 37%;
 }
 
 .imagem{
@@ -143,7 +151,7 @@ a{
     width: 278px;
     height: 200px;
     position: absolute;
-    margin-top: 12px;
+    margin-top: 5px;
     margin-left: 2px;
 }
 
@@ -167,9 +175,13 @@ a{
     border-radius: 5px;
 }*/
 
+.Topico{
+
+}
+
 .texto{
     line-height: 1em;
-    width: 285px;
+    width: 260px;
     height: 180px;
     margin-left: 290px;
     margin-top: 2px;
@@ -181,11 +193,11 @@ a{
 }
 
 .SecaoComentarios{
-    height: 250px;
+    height: 200px;
 }
 
 section.SecaoComentarios >h3{
-    font-size: 25px;
+    font-size: 22px;
     margin-top: 10px;
     margin-left: 20px;
     
@@ -249,21 +261,21 @@ div.Comentarios > img{
     background-color: var(--cor3);
     display: block;
     position: absolute;
-    margin-left: -10px;
+    margin-left: 10px;
 }
 
 #T2{
     background-color: var(--cor1);
     display: inline-block;
     position: absolute;
-    margin-left: 585px;
+    margin-left: 590px;
 
 }
 
 #T3{
     background-color: var(--cor4);
-    display: block;
-    margin-left: 1175px;
+    display: inline-block;
+    margin-left: 1170px;
     
 }
 
