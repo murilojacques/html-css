@@ -27,11 +27,19 @@ header{
 }
 
 nav{
-    display: inline-block;
+    display: block;
+    position: absolute;
     height: 25px;
     width: 400px;
-    border-style: solid;
-    border-color: #cc1717;
+    margin-top: -20px;
+    margin-left: 100px;
+}
+
+nav > p{
+    display: inline-flex;
+    background-color: white;
+    margin-top: 2px;
+    margin-left: 35px;
 }
 
 h1{
@@ -72,14 +80,13 @@ body{
 }
 
 section{
-    margin: auto;
-    margin-top: 10px;
-    width: 570px;
+    margin-top: 70px;
+    width: 590px;
     height: 221px;
     border-style:solid;
     border-width: 1px;
     border-radius: 5px;
-    background-color: gray;
+
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.432);
 }
 
@@ -114,19 +121,29 @@ main{
 
 a{
     color: blue;
-    background-color: white;
-    position: absolute;
-    font-size: 15px;
-    padding-top: 0px;
-    padding-left: 3px;
-    padding-bottom: 3px;
-    padding-right: 3px;
-    border-radius: 5px;
-    margin-top: 4px;
-    margin-left: 455px;
+    text-decoration: none;
     text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.651);
 }
 
+footer{
+    background-image: url(Imagens_Senac_HTML_2/Footer_Banner_Corrigido.png);
+    background-size: auto;
+    height: 67px;
+    margin-top: 14px;
+    position: relative;
+    display: flex;
+}
+
+footer > h3{
+    margin-top: 25px;
+    margin-left: 350px;
+}
+
+footer > p{
+    margin-bottom: 0px;
+    margin-top: 15px;
+    margin-left: 60px;
+}
 
 /*--------------------------------- tags -----------------------------*/
 
@@ -134,16 +151,12 @@ a{
 
 
 /*--------------------------------- Classes -----------------------------*/
-.links_Header a{
-    position: absolute;
-    margin-left: auto;
-}
 
 .Carrossel{
     width: 411x;
     height: 200px;
-    padding-top: 10px;
-    margin-left: 37%;
+    padding-top: 15px;
+    margin-left: 686px;
 }
 
 .imagem{
@@ -154,7 +167,18 @@ a{
     margin-top: 5px;
     margin-left: 2px;
 }
-
+ .SaibaMais{
+    position: absolute;
+    padding-top: 3px;
+    padding-left: 3px;
+    padding-bottom: 3px;
+    padding-right: 3px;
+    border-radius: 4px;
+    margin-top: 8px;
+    margin-left: 490px;
+    background-color: white;
+    font-size: 15px;
+ }
 
 /*.imagem_inversa{
     display: block;
@@ -175,16 +199,12 @@ a{
     border-radius: 5px;
 }*/
 
-.Topico{
-
-}
-
 .texto{
     line-height: 1em;
-    width: 260px;
+    width: 275px;
     height: 180px;
     margin-left: 290px;
-    margin-top: 2px;
+    margin-top: 4px;
     display: block;
     
     border-style:solid;
@@ -193,35 +213,42 @@ a{
 }
 
 .SecaoComentarios{
-    height: 200px;
+    height: 155px;
+    width: 1650px;
+    margin-top: 15px;
+    margin-left: 120px;
+    padding-left: 40px;
+    background-color: rgb(63, 194, 37);
 }
 
 section.SecaoComentarios >h3{
     font-size: 22px;
-    margin-top: 10px;
-    margin-left: 20px;
+    margin-top: 8px;
     
 }
 .Comentarios{
-    width: 1300px;
-    height: 45px;
+    width: 660px;
+    height: 30px;
+    padding-top: 5px;
     align-content: normal;
-    margin-left: 100px;
-    margin-top: 20px;
+    margin: auto;
+    margin-top: 10px;
+    margin-inline:75px;
     border-style:solid;
     border-width: 1px;
     border-radius: 5px;
-    background-color: lightgray;
-    display: block;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    display: inline-flex;
     text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.651);
 }
 
 div.Comentarios > p{
     position: absolute;
     display: inline;
-    margin-left: 80px;
-    margin-bottom: 25px;
-    padding-left: 10px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    padding-left: 5px;
     text-align: justify;
     color: black;
     max-width: 1000px;
@@ -230,10 +257,10 @@ div.Comentarios > p{
 
 div.Comentarios > img{
     position: absolute;
-    width: 40px;
-    height: 40px;
-    margin-top: 10px;
-    margin-left: 20px;
+    width: 30px;
+    height: 30px;
+    margin-top: -3px;
+    margin-left: -45px;
     display: inline;
 }
 
@@ -261,21 +288,21 @@ div.Comentarios > img{
     background-color: var(--cor3);
     display: block;
     position: absolute;
-    margin-left: 10px;
+    margin-left: 18px;
 }
 
 #T2{
     background-color: var(--cor1);
     display: inline-block;
     position: absolute;
-    margin-left: 590px;
+    margin-left: 660px;
 
 }
 
 #T3{
     background-color: var(--cor4);
     display: inline-block;
-    margin-left: 1170px;
+    margin-left: 1300px;
     
 }
 
@@ -294,4 +321,7 @@ div.Comentarios > img{
     margin-left: 35px;
 }
 
+#Redes{
+    margin-left: 300px;
+}
 /*--------------------------------- ID -----------------------------*/
