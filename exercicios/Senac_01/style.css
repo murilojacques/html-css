@@ -86,7 +86,6 @@ section{
     border-style:solid;
     border-width: 1px;
     border-radius: 5px;
-
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.432);
 }
 
@@ -99,13 +98,12 @@ div{
 div > p{
     margin: auto;
     text-align: left;
-    padding-left: 15px;
     font-size: 15px;
 }
 
 p{
     display: block;
-    margin-left: 10px;
+    margin-left: 0px;
     margin-bottom: 25px;
     padding-left: 10px;
     padding-right: 10px;
@@ -206,7 +204,7 @@ footer > p{
     margin-left: 290px;
     margin-top: 4px;
     display: block;
-    
+    padding-left: 15px;
     border-style:solid;
     border-width: 1px;
     border-radius: 5px;
@@ -276,8 +274,9 @@ div.Comentarios > img{
 /*--------------------------------- ID -----------------------------*/
 #Apresentacao{
     background-color: var(--cor1);
-    width: 1200px;
+    width: 1185px;
     height: 100px;
+    padding-left: 15px;
     margin: auto;
     margin-top: 10px;
     
@@ -306,22 +305,28 @@ div.Comentarios > img{
     
 }
 
-#link_inverso{
-    color: rgb(0, 0, 255);
-    background-color: white;
-    position: absolute;
-    font-size: 22px;
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-bottom: 10px;
-    padding-right: 10px;
-    border-radius: 5px;
+#GaleriaImagens{
     margin: auto;
-    margin-top: 345px;
-    margin-left: 35px;
+    margin-top: 8px;
+    padding-left: 32px;
+    width: 1700px;
+    height: 280px;
+    background-color: var(--cor3);
 }
 
-#Redes{
+#GaleriaImagens img{
+    margin-left: 45px;
+}
+
+#GaleriaVideos{
+    margin: auto;
+    margin-top: 10px;
+    width: 1810px;
+    height: 340px;
+    background-color: var(--cor2);
+}
+
+#Footer_RedeSociais{
     margin-left: 300px;
 }
 /*--------------------------------- ID -----------------------------*/
