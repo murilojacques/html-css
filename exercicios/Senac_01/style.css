@@ -120,6 +120,7 @@ main{
 a{
     color: blue;
     text-decoration: none;
+   
     text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.651);
 }
 
@@ -127,8 +128,9 @@ footer{
     background-image: url(Imagens_Senac_HTML_2/Footer_Banner_Corrigido.png);
     background-size: auto;
     height: 67px;
-    margin-top: 14px;
-    position: relative;
+    width: 100%;
+    bottom: 0px;
+    position: fixed;
     display: flex;
 }
 
@@ -310,7 +312,7 @@ div.Comentarios > img{
     margin-top: 8px;
     padding-left: 32px;
     width: 1700px;
-    height: 280px;
+    height: 270px;
     background-color: var(--cor3);
 }
 
@@ -321,9 +323,32 @@ div.Comentarios > img{
 #GaleriaVideos{
     margin: auto;
     margin-top: 10px;
+    margin-bottom: 22px;
+    padding-left: 18px;
     width: 1810px;
-    height: 340px;
+    height: 335px;
     background-color: var(--cor2);
+}
+
+#GaleriaVideos iframe{
+    margin-top: 35px;
+    margin-left: 39px;
+}
+
+#GaleriaVideos h3{
+    position: absolute;
+}
+
+#link_Solicitar{
+    color: white;
+    margin-left: 1600px;
+    padding: 8px;
+    font-size: 24px;
+    background-color: #cc1717;
+    border: solid;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 5px;
 }
 
 #Footer_RedeSociais{
