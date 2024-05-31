@@ -23,24 +23,50 @@
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus quis eveniet nobis quos similique perspiciatis iusto est numquam, ducimus natus accusantium cumque officia nam obcaecati fugit eaque provident inventore assumenda.</p>
             </section>
            
-            <section>
+            <section id="Formulario">
                 <form action="#" method="POST">
-                    <label>Nome:</label>
-                    <input type="text" name="Cliente" required />
-                    <br />
-                    <label>Email:</label>
-                    <input type="email" name="nome_funcionario" required/>
-                    <br />
-                    <label>Telefone:</label>
-                    <input type="text" name="nome_funcionario" required />
-                    <br />
-                    <label>Endereço:</label>
-                    <input type="text" name="nome_funcionario" required />
-                    <br />
-                    <label>Data:</label>
-                    <input type="date" name="nome_funcionario" required />
-                    <br />
-                    <input type="submit" value="Cadastro" />
+                    <div>
+                        <label>Nome:</label>
+                        <input type="text" name="Cliente" required />
+
+                        <label>Email:</label>
+                        <input type="email" name="email_Cliente" required/>
+
+
+                        <label>Telefone:</label>
+                        <input type="text" name="Telefone_Cliente" required />
+
+                        <label>Endereço:</label>
+                        <input type="text" name="Endereco_Cliente" required />
+
+                        <label>Data:</label>
+                        <input id="Data_Formulario" type="date" name="Data" required />
+                    </div>
+
+                    <label>Observações: <label>
+                    <textarea name="Observacoes">  
+                    </textarea>
+                    
+                    <div id="Caractericas_Evento">
+                        <label>Idade Media dos Participantes:</label>
+                        <input type="text" name="Cliente" required />
+                        <br>
+                        <label>Tipo Evento:</label>
+                        <input type="email" name="email_Cliente" required/>
+
+                    </div>
+
+                    <div id="Radio_Buttons">
+                        <input type="radio"name="opcoes-servico" value="Teatro">
+                        <label for="Teatro">Teatro</label>
+                        
+                        <input type="radio" name="opcoes-servico" value="Brinquedos">
+                        <label for="Teatro">Brinquedos</label>
+
+                        <input type="radio" name="opcoes-servico" value="Apresentacoes Educativas">
+                        <label for="Teatro">Apresentações Educativas</label>
+                    </div>
+
                 </form>
             </section>
 
