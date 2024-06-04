@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pagina de Pagamento</title>
+</head>
+<body>
+    <form action="" method="post">
+        <p>
+            <label for="" id="valortxt">Valor</label>
+            <input type="number" id="Campo_Valor">
+        </p>
+
+        <p>
+            <input type="radio" id="RadioPix" class="RadioButtons">
+            <label for="RadioPix">PIX</label>
+
+            <input type="radio" id="RadioCartaoCre" class="RadioButtons">
+            <label for="RadioCartaoCre">Cartão de Credito</label>
+        </p>
+
+        <input type="submit" value="Informar Dados" onclick="">
+
+
+
+        <div class="InformarDados">
+            <h1>PIX</h1>
+            <label for="Campo_CPF">CPF</label>
+            <input type="number" id="Campo_CPF">
+        </div>
+
+
+
+        <div class="InformarDados">
+            <h1>CARTÃO DE CRÉDITO</h1>
+
+            <label for="Campo_Numero">Número</label>
+            <input type="number" id="Campo_Numero">
+            <img src="Imagens/SUS_pq.webp" alt="" for="Campo_Numero">
+            <p id="TextoMsgNumeroErro"></p>
+
+            <label for="">Titular</label>
+            <input type="number" id="Campo_Titular">
+            <br>
+            <label for="">Cód. Segurança</label>
+            <input type="number" id="Campo_CodSeguranca">
+            <br>
+            <label for="">Vencimento</label>
+            <input type="date" id="Campo_Vencimento">
+            <br>
+            <label for="">Parcelas</label>
+            <select name="Parcelas" id="Numero_Parcelas">
+                <option value="1X">1X</option>
+                <option value="2X">2X</option>
+                <option value="3X">3X</option>
+                <option value="4X">4X</option>
+                <option value="5X">5X</option>
+            </select>
+        </div>
+
+
+    </form>
+</body>
+</html>

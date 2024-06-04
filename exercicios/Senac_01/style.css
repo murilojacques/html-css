@@ -235,7 +235,7 @@ footer > p{
     width: 1650px;
     margin-top: 15px;
     margin-left: 120px;
-    padding-left: 40px;
+    padding-left: 30px;
     background-color: rgb(63, 194, 37);
 }
 
@@ -245,13 +245,14 @@ section.SecaoComentarios >h3{
     
 }
 .Comentarios{
-    width: 660px;
-    height: 30px;
+    width: 475px;
+    height: 35px;
     padding-top: 5px;
     align-content: normal;
     margin: auto;
-    margin-top: 10px;
-    margin-inline:75px;
+    margin-top: 8px;
+    margin-inline:25px;
+    padding-left: 10px;
     border-style:solid;
     border-width: 1px;
     border-radius: 5px;
@@ -264,10 +265,11 @@ section.SecaoComentarios >h3{
 div.Comentarios > p{
     position: absolute;
     display: inline;
-    margin-left: 20px;
+    font-size: 12px;
+    margin-left: 0px;
     margin-bottom: 5px;
-    padding-left: 5px;
-    text-align: justify;
+    padding-left: 0px;
+    text-align: left;
     color: black;
     max-width: 1000px;
     max-height: 20px;
