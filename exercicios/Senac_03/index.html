@@ -5,27 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Pagina de Pagamento</title>
+    
 </head>
 <body>
-    <form action="" method="post">
+    <form action="" method="get">
         <p>
             <label for="" id="valortxt">Valor</label>
             <input type="number" id="Campo_Valor">
         </p>
 
         <p>
-            <input type="radio" id="RadioPix" class="RadioButtons">
+            <input type="radio" value="Pix" id="RadioPix" class="RadioButtons">
             <label for="RadioPix">PIX</label>
 
-            <input type="radio" id="RadioCartaoCre" class="RadioButtons">
+            <input type="radio" value="Cartao" id="RadioCartaoCre" class="RadioButtons">
             <label for="RadioCartaoCre">Cartão de Credito</label>
         </p>
 
-        <input type="submit" value="Informar Dados" onclick="">
-
-
-
-        <div class="InformarDados">
+       
+    </form>
+    <input type="submit" value="Opa" onclick="MostrarMetodoPaga()">
+    <form action="" method="post">
+    
+        <div class="InformarDados"  id="Sessao_Pix">
             <h1>PIX</h1>
             <label for="Campo_CPF">CPF</label>
             <input type="number" id="Campo_CPF">
@@ -33,7 +35,7 @@
 
 
 
-        <div class="InformarDados">
+        <div class="InformarDados" id="Sessao_CartaoCredito">
             <h1>CARTÃO DE CRÉDITO</h1>
 
             <label for="Campo_Numero">Número</label>
@@ -52,15 +54,44 @@
             <br>
             <label for="">Parcelas</label>
             <select name="Parcelas" id="Numero_Parcelas">
-                <option value="1X">1X</option>
-                <option value="2X">2X</option>
-                <option value="3X">3X</option>
-                <option value="4X">4X</option>
-                <option value="5X">5X</option>
+                <option value="1">1X</option>
+                <option value="2">2X</option>
+                <option value="3">3X</option>
+                <option value="4">4X</option>
+                <option value="5">5X</option>
             </select>
+            <br>
+            <div class="Parcelas_Texto">
+                <p>1X -</p>
+                <p>2X -</p>
+                <p>3X -</p>
+                <p>4X -</p>
+                <p>5X -</p>
+            </div>
         </div>
-
-
     </form>
+
+    
+
+    <script>
+
+
+        function MostrarMetodoPaga(){
+            var div_Pix = document.getElementById("Sessao_Pix");
+            var div_Cartao = document.getElementById("Sessao_CartaoCredito");
+
+            const radio_Cartao = document.getElementById("RadioCartaoCre");
+            const radio_Pix = document.getElementById("RadioPix");
+            if(radio_Pix.checked){
+                div_Pix.style.display = "block";
+            }
+            else if(radio_Cartao.checked){
+                div_Cartao.style.display = "block";
+            }
+            else{
+                alert("Você deve Selecionar uma forma de Pagamento")
+            }
+        }
+    </script>
 </body>
 </html>
