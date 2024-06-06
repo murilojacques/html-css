@@ -15,10 +15,10 @@
         </p>
 
         <p>
-            <input type="radio" value="Pix" id="RadioPix" class="RadioButtons">
+            <input type="radio" value="Pix" id="RadioPix" class="RadioButtons" name="Tipo_Pagamento">
             <label for="RadioPix">PIX</label>
 
-            <input type="radio" value="Cartao" id="RadioCartaoCre" class="RadioButtons">
+            <input type="radio" value="Cartao" id="RadioCartaoCre" class="RadioButtons" name="Tipo_Pagamento">
             <label for="RadioCartaoCre">Cartão de Credito</label>
         </p>
 
@@ -40,7 +40,7 @@
 
             <label for="Campo_Numero">Número</label>
             <input type="number" id="Campo_Numero">
-            <img src="Imagens/SUS_pq.webp" alt="" for="Campo_Numero">
+            <img id="Bandeira_Cartao" src="Imagens/Logo_Visa_pq.jpg" alt="" for="Campo_Numero">
             <p id="TextoMsgNumeroErro"></p>
 
             <label for="">Titular</label>
@@ -84,14 +84,18 @@
             const radio_Pix = document.getElementById("RadioPix");
             if(radio_Pix.checked){
                 div_Pix.style.display = "block";
+                div_Cartao.style.display = "none";
             }
             else if(radio_Cartao.checked){
                 div_Cartao.style.display = "block";
+                div_Pix.style.display = "none";
             }
             else{
                 alert("Você deve Selecionar uma forma de Pagamento")
             }
         }
+
+
     </script>
 </body>
 </html>
