@@ -62,7 +62,7 @@
             <input type="date" id="Campo_Vencimento">
             <br>
             <label for="">Parcelas</label>
-            <select name="Parcelas" id="Numero_Parcelas" onblur="Total()">
+            <select name="Parcelas" id="Numero_Parcelas" onchange="Total()">
                 <option id="parcela1" value="1">1X R$ 0,00</option>
                 <option id="parcela2" value="2">2X R$ 0,00</option>
                 <option id="parcela3" value="3">3X R$ 0,00</option>
@@ -70,7 +70,13 @@
                 <option id="parcela5" value="5">5X R$ 0,00</option>
             </select>
             <br>
-            
+            <div id="divParcela">
+                <p id="pParcela1">1X R$ 0,00</p>
+                <p id="pParcela2">2X R$ 0,00</p>
+                <p id="pParcela3">3X R$ 0,00</p>
+                <p id="pParcela4">4X R$ 0,00</p>
+                <p id="pParcela5">5X R$ 0,00</p>
+            </div>
     </form>
 
 
@@ -90,13 +96,16 @@
                     div_Pix.style.display = "block";
                     div_Cartao.style.display = "none";
                     Total();
+                    document.getElementById("Div_TotalPagar").style.marginTop = '0px'
                 }
                 else if(radio_Cartao.checked){
                     div_Cartao.style.display = "block";
                     div_Pix.style.display = "none";
-                    document.getElementById("Div_TotalPagar").style.marginTop = '300px'
+                    document.getElementById("Div_TotalPagar").style.marginTop = '310px'
                     Total();
                     CalcParcelas(pagamento);
+                    document.getElementById("Div_TotalPagar").style.marginTop = '420px'
+                    
                 }
                 else{
                     alert("Você deve Selecionar uma forma de Pagamento e inserir um valor");
@@ -120,18 +129,19 @@
                 imgBandeiraCar.style.width = "70px";
                 imgBandeiraCar.style.height = "30px";
                 document.getElementById("TextoMsgNumeroErro").innerHTML = "<p id='TextoMsgNumeroErro'> </p>"
-                document.getElementById("Div_TotalPagar").style.marginTop = '300px'
+                document.getElementById("Div_TotalPagar").style.marginTop = '410px'
+                
             }
             else if(numeroCartao.startsWith('4321')){
                 imgBandeiraCar.src = 'Imagens/Logo_MasterCard_pq.png';
                 imgBandeiraCar.style.width = "70px";
                 imgBandeiraCar.style.height = "50px";
                 document.getElementById("TextoMsgNumeroErro").innerHTML = "<p id='TextoMsgNumeroErro'> </p>"
-                document.getElementById("Div_TotalPagar").style.marginTop = '300px'
+                document.getElementById("Div_TotalPagar").style.marginTop = '410px'
             }
             else{
                 document.getElementById("TextoMsgNumeroErro").innerHTML = "<p id='TextoMsgNumeroErro'>Numero de Cartão Invalido</p>"
-                document.getElementById("Div_TotalPagar").style.marginTop = '318px'
+                document.getElementById("Div_TotalPagar").style.marginTop = '428px'
             }
 
         }
@@ -141,25 +151,33 @@
 
             for(let i = 1; i < document.getElementById("Numero_Parcelas").length+1; i++){
                let valorParcela = pagamento;
+                
+                
 
                if(i == 4){
                 valorParcela = valorParcela * 1.05;
                 valorParcela= valorParcela/i;
                 let nParcela = "parcela"+i;
+                let pParcela = "pParcela"+i;
                 document.getElementById(nParcela).innerHTML = "<option id='parcela1' value='1'>"+i+"X R$"+ valorParcela.toFixed(2)+"</option>"
+                document.getElementById(pParcela).innerHTML = "<p id='pParcela1'>"+i+"X R$"+ valorParcela.toFixed(2)+"</p>"
                }
                
                else if(i > 5){
                 valorParcela = valorParcela * 1.10;
                 valorParcela= valorParcela/i;
                 let nParcela = "parcela"+i;
+                let pParcela = "pParcela"+i;
                 document.getElementById(nParcela).innerHTML = "<option id='parcela1' value='1'>"+i+"X R$"+ valorParcela.toFixed(2)+"</option>"
+                document.getElementById(pParcela).innerHTML = "<p id='pParcela1'>"+i+"X R$"+ valorParcela.toFixed(2)+"</p>"
                }
                
                else{
                 valorParcela= valorParcela/i;
                 let nParcela = "parcela"+i;
+                let pParcela = "pParcela"+i;
                 document.getElementById(nParcela).innerHTML = "<option id='parcela1' value='1'>"+i+"X R$"+ valorParcela.toFixed(2)+"</option>"
+                document.getElementById(pParcela).innerHTML = "<p id='pParcela1'>"+i+"X R$"+ valorParcela.toFixed(2)+"</p>"
                }
                
             }
