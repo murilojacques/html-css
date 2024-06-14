@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senac atividade 04</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+    <style>
+        /*----------------------- Tags -----------------------*/
+        body{
+            max-width: 1400px;
+            margin: auto;
+        }
+
+        h2{
+            font-size: 22px;
+        }
+        /*----------------------- Tags -----------------------*/
+
+
+        /*----------------------- Classes -----------------------*/
+
+        /*----------------------- Classes -----------------------*/
+
+
+        /*----------------------- IDs -----------------------*/
+        #div_Apresentacao{
+            border-style: solid;
+            border-width: 1px;
+            border-radius: 5px;
+            padding-left: 5px;
+        }
+        /*----------------------- IDs -----------------------*/
+    </style>
+
+</head>
+
+
+<body>
+
+    <header>
+        <h1>Logo</h1>
+    </header>
+
+    <section>
+        <div id="div_Apresentacao" class="col-md-3">
+            <h2>Sinta o conforto acolhedor de nossas hospedagens</h2>
+            <p>Hospede-se em nossos Hotéis com quartos a partir de R$ 100,00</p>
+            <a href="#">Saiba Mais</a>
+        </div>
+
+        <picture>
+            <img src="imagens/SUS_pq.webp" alt="">
+        </picture>
+    </section>
+    
+
+    <section>
+        <h2>Por que se Hospedar em nossos Hotéis?</h2>
+        <picture>
+            <img src="imagens/SUS_pq.webp" alt="">
+        </picture>
+        <div>
+            <h3>Delicioso café da Manhã</h3>
+            <p>Incluso em todas as Diarias</p>
+        </div>
+
+
+        <picture>
+            <img src="imagens/SUS_pq.webp" alt="">
+        </picture>
+        <div>
+            <h3>Fácil acesso</h3>
+            <p>Perto dos principais pontos Turisticos</p>
+        </div>
+
+
+        <div>
+            <h3>Nosso Quartos</h3>
+
+            <img src="imagens/SUS_pq.webp" alt="">
+            <p>Suíte Solteiro</p>
+
+            <img src="imagens/SUS_pq.webp" alt="">
+            <p>Suíte Casal</p>
+
+            <img src="imagens/SUS_pq.webp" alt="">
+            <p>Suíte Master</p>
+        </div>
+    </section>
+
+
+
+    <section>
+        <div>
+            <h2>Faça sua Reserva</h2>
+            <p>Entre em contato conosco informando as datas desejadas. Lhe retornaremos informando a disponibilidade e repassando detalhes da reserva</p>
+
+            <form action="">
+                <label for="">Nome</label>
+                <input type="text" id="Campo_Nome">
+
+                 <label for="">E-mail</label>
+                <input type="email" id="Campo_Email">
+
+               <label for="">Data de entrada</label>
+                <input type="date" id="Campo_Data">
+
+                <label for="">Data de Saída</label>
+                <input type="date" id="Campo_DataSaida">
+
+                <label for="">Observações</label>
+                <textarea name="campo_Observacoes" id="Campo_Observacoes"></textarea>
+
+                <label for="">Adultos</label>
+                <input type="number" id="Campo_NAdultos">
+
+                <label for="">Crianças</label>
+                <input type="number" id="Campo_NCriancas">
+
+                <button>enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js">
+
+    </script>
+</body>
+</html>
