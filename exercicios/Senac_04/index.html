@@ -11,16 +11,21 @@
         body{
             max-width: 1400px;
             margin: auto;
+            
+            height: 100%;
         }
 
         h2{
             font-size: 22px;
+
         }
         /*----------------------- Tags -----------------------*/
 
 
         /*----------------------- Classes -----------------------*/
-
+        .Destaque{
+            font-size: 20px;
+        }
         /*----------------------- Classes -----------------------*/
 
 
@@ -30,6 +35,92 @@
             border-width: 1px;
             border-radius: 5px;
             padding-left: 5px;
+        }
+
+        #Div_Apresentacao{
+            border-style: dashed;
+            display: flex;
+        }
+
+        #Div_Apresentacao img{
+            margin-left: 0px;
+        }
+
+        #Section_Info{
+            display: inline-block;
+            border-style: solid;
+            width: 100%;
+            border-width: 1px;
+        }
+
+        #Div_Info{
+            width: 100%;
+            padding-top: 10px;
+            display: flex;
+        }
+
+
+        #div_Refeicao{
+
+            display: flex;
+        }
+
+        #div_Refeicao div{
+            margin-left: 10px;
+        }
+
+        #div_Refeicao h3{
+            font-size: 20px;
+        }
+
+        #div_Refeicao p{
+            margin-left: 10px;
+        }
+
+
+        #div_Localizacao{
+
+            display: flex;
+            margin-left: 100px;
+        }
+
+        #div_Localizacao div{
+            margin-left: 10px;
+        }
+
+        #div_Localizacao p{
+            margin-left: 10px;
+        }
+
+        .destaque{ 
+               float:left;  
+               max-height:200px; 
+               max-width:100% 
+             } 
+
+
+        #Div_Suites{
+            display: flex;
+            border-style: solid;
+            border-width: 1px;
+            margin: auto;
+        }
+
+        #div_suiteSolteiro{
+            margin-top: 20px;
+        }
+
+        #div_suiteCasal{
+            
+        }
+
+        #div_suitePremium{
+            
+        }
+
+
+        #Div_Form{
+
         }
         /*----------------------- IDs -----------------------*/
     </style>
@@ -43,86 +134,119 @@
         <h1>Logo</h1>
     </header>
 
-    <section>
-        <div id="div_Apresentacao" class="col-md-3">
-            <h2>Sinta o conforto acolhedor de nossas hospedagens</h2>
-            <p>Hospede-se em nossos Hotéis com quartos a partir de R$ 100,00</p>
-            <a href="#">Saiba Mais</a>
-        </div>
 
-        <picture>
-            <img src="imagens/SUS_pq.webp" alt="">
-        </picture>
-    </section>
+
+
+
+
     
 
-    <section>
-        <h2>Por que se Hospedar em nossos Hotéis?</h2>
-        <picture>
-            <img src="imagens/SUS_pq.webp" alt="">
-        </picture>
-        <div>
-            <h3>Delicioso café da Manhã</h3>
-            <p>Incluso em todas as Diarias</p>
+      <div id="Div_Apresentacao" class="container">
+        <div id="A" class="row">
+            <div id="div_Apresentacao" class="col-sm-4">
+                <h2>Sinta o conforto acolhedor de nossas hospedagens</h2>
+                <p>Hospede-se em nossos Hotéis com quartos a partir de R$ 100,00</p>
+                <a href="#">Saiba Mais</a>
+                
+            </div>  
+            <div class="col-sm-4">
+                <picture>
+                    <source srcset="imagens/SUS_pq.webp" media="(max-width: 800px)">
+                    <img src="imagens/Hotel_2_550x355.jpg" alt="">
+                </picture>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="container">
+        <div class="row">
+
+            <div>
+                <h2>Por que se Hospedar em nossos Hotéis</h2>
+            </div>
+
+            <div id="Div_Info">
+
+                <div>
+                    <img src="imagens/xicara_60x60.png" alt="">
+                </div>
+                <div class="Destaque">
+                    <h3>Delicioso café da Manhã</h3>
+                    <p>Incluso em todas as Diarias</p>
+                </div>
+
+
+                <div>
+                    <img src="imagens/localizacao_2_60x60.png" alt="">
+                </div>
+                <div class="Destaque">
+                    <h3>Facil Acesso</h3>
+                    <p>Perto dos principais Pontos Turisticos</p>
+                </div>
+                
+            </div>
+
         </div>
 
+        <div class="row" >
 
-        <picture>
-            <img src="imagens/SUS_pq.webp" alt="">
-        </picture>
-        <div>
-            <h3>Fácil acesso</h3>
-            <p>Perto dos principais pontos Turisticos</p>
+            <div id="Div_Suites">
+                <div>
+                    <picture>
+                        <img src="imagens/suite_Solteiro_300x207.jpg" alt="" id="Imagem_Refeicao">
+                    </picture>
+                            <p>Suíte Solteiro</p>
+                </div>
+                <div>
+                    <picture>
+                        <img src="imagens/suite_Casal_300x200.jpg" alt="" id="Imagem_Refeicao">
+                    </picture>
+                            <p>Suíte Casal</p>
+                </div>
+                <div>
+                    <picture>
+                        <img src="imagens/Suite_Premium_300x200.jpg" alt="" id="Imagem_Refeicao">
+                    </picture>
+                            <p>Suíte Master</p>
+                </div>
+            </div>
+
         </div>
+    </div>
 
 
-        <div>
-            <h3>Nosso Quartos</h3>
 
-            <img src="imagens/SUS_pq.webp" alt="">
-            <p>Suíte Solteiro</p>
-
-            <img src="imagens/SUS_pq.webp" alt="">
-            <p>Suíte Casal</p>
-
-            <img src="imagens/SUS_pq.webp" alt="">
-            <p>Suíte Master</p>
+    
+        <div class="container">
+            <div class="row">
+                <div>
+                    <h2>Faça sua Reserva</h2>
+                    <p>Entre em contato conosco informando as datas desejadas. Lhe retornaremos informando a disponibilidade e repassando detalhes da reserva</p>
+                </div>
+                <div id="Div_Form">
+                    <form action="">
+                        <label for="Campo_Nome">Nome</label>
+                        <input type="text" id="Campo_Nome">
+                         <label for="Campo_Email">E-mail</label>
+                        <input type="email" id="Campo_Email">
+                       <label for="Campo_Data">Data de entrada</label>
+                        <input type="date" id="Campo_Data">
+                        <label for="Campo_DataSaida">Data de Saída</label>
+                        <input type="date" id="Campo_DataSaida">
+                        <label for="Campo_Observacoes">Observações</label>
+                        <textarea name="campo_Observacoes" id="Campo_Observacoes"></textarea>
+                        <label for="Campo_NAdultos">Adultos</label>
+                        <input type="number" id="Campo_NAdultos">
+                        <label for="Campo_NCriancas">Crianças</label>
+                        <input type="number" id="Campo_NCriancas">
+                        <button>enviar</button>
+                    </form>
+                </div>
+            </div>
         </div>
-    </section>
-
-
-
-    <section>
-        <div>
-            <h2>Faça sua Reserva</h2>
-            <p>Entre em contato conosco informando as datas desejadas. Lhe retornaremos informando a disponibilidade e repassando detalhes da reserva</p>
-
-            <form action="">
-                <label for="">Nome</label>
-                <input type="text" id="Campo_Nome">
-
-                 <label for="">E-mail</label>
-                <input type="email" id="Campo_Email">
-
-               <label for="">Data de entrada</label>
-                <input type="date" id="Campo_Data">
-
-                <label for="">Data de Saída</label>
-                <input type="date" id="Campo_DataSaida">
-
-                <label for="">Observações</label>
-                <textarea name="campo_Observacoes" id="Campo_Observacoes"></textarea>
-
-                <label for="">Adultos</label>
-                <input type="number" id="Campo_NAdultos">
-
-                <label for="">Crianças</label>
-                <input type="number" id="Campo_NCriancas">
-
-                <button>enviar</button>
-            </form>
-        </div>
-    </section>
 
     <script src="bootstrap/js/bootstrap.bundle.min.js">
 
