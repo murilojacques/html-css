@@ -9,87 +9,47 @@
     <style>
         /*----------------------- Tags -----------------------*/
         body{
-            max-width: 1400px;
+            max-width: 1100px;
             margin: auto;
             
             height: 100%;
         }
 
-        h2{
-            font-size: 22px;
+        header{
+            width: 100%;
+            padding: 5px;
+        }
 
+        h1{
+            color: #0044ffd0;
+        }
+
+        h2{
+            font-size: 25px;
+
+        }
+
+        h3{
+            font-size: 22px;
+        }
+
+        a{
+            text-decoration: none;
+            
+            font-size: 18px;
+            color: white;
+            background-color: rgba(0, 68, 255, 0.815);
         }
         /*----------------------- Tags -----------------------*/
 
 
         /*----------------------- Classes -----------------------*/
         .Destaque{
-            font-size: 20px;
-        }
-        /*----------------------- Classes -----------------------*/
-
-
-        /*----------------------- IDs -----------------------*/
-        #div_Apresentacao{
-            border-style: solid;
-            border-width: 1px;
-            border-radius: 5px;
-            padding-left: 5px;
+            font-size: 15px;
         }
 
-        #Div_Apresentacao{
-            border-style: dashed;
-            display: flex;
-        }
-
-        #Div_Apresentacao img{
-            margin-left: 0px;
-        }
-
-        #Section_Info{
-            display: inline-block;
-            border-style: solid;
-            width: 100%;
-            border-width: 1px;
-        }
-
-        #Div_Info{
-            width: 100%;
-            padding-top: 10px;
-            display: flex;
-        }
-
-
-        #div_Refeicao{
-
-            display: flex;
-        }
-
-        #div_Refeicao div{
-            margin-left: 10px;
-        }
-
-        #div_Refeicao h3{
-            font-size: 20px;
-        }
-
-        #div_Refeicao p{
-            margin-left: 10px;
-        }
-
-
-        #div_Localizacao{
-
-            display: flex;
-            margin-left: 100px;
-        }
-
-        #div_Localizacao div{
-            margin-left: 10px;
-        }
-
-        #div_Localizacao p{
-            margin-left: 10px;
+        .FormDado{
+            float: right;
         }
 
         .destaque{ 
@@ -97,31 +57,297 @@
                max-height:200px; 
                max-width:100% 
              } 
+        /*----------------------- Classes -----------------------*/
 
 
-        #Div_Suites{
-            display: flex;
+        /*----------------------- IDs -----------------------*/
+        #div_Apresentacao{
+            display: grid;
             border-style: solid;
             border-width: 1px;
+            border-radius: 5px;
+            padding-left: 5px;
+            margin-left: 50px;
+            max-height: 270px;
+
+            
+        }
+
+        #A{
             margin: auto;
         }
 
-        #div_suiteSolteiro{
+        #Saiba_Mais{
+            margin-top: 90px;
+            padding: 5px;
+            margin-bottom: 5px;
+            
+            border-radius: 20px;
+            width: 100px;
+        }
+
+        #Div_Apresentacao{
+            margin: auto;
+            display: flex;
+            margin-top: 25px;
+        }
+
+        #Div_Apresentacao img{
+            margin: auto;
+        }
+
+
+
+
+        #Section_Info{
+            display: inline-block;
+            
+            width: 100%;
+
+        }
+
+        #Div_TextoDestaque1{
+           margin-top: 20px;
+           display: flex;
+           
+        }
+
+        #Div_TextoDestaque1 h2{
+           margin: auto;
+           margin-top: 35px;
+        }
+
+
+        #Div_Info{
+            width: 100%;
+            padding-top: 20px;
+            display: flex;
+            
+            margin: auto;
+        }
+
+        #Div_CafeManha{
+            display: flex;
+            margin: auto;
+            margin-bottom: 0px;
+
+        }
+
+        #Div_Localizacao{
+            display: flex;
+            margin: auto;
+            margin-bottom: 0px;
+        }
+
+
+        #Div_Suites{
+            display: block;
+            border-style: solid;
+            border-width: 1px;
             margin-top: 20px;
+            min-width: 700px;
+            background-color: rgb(0, 68, 255, 0.815);
+            border-radius: 10px;
+            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.404);
         }
 
-        #div_suiteCasal{
+        #Div_Suites h2{
+            color: white;
+            margin: auto;
+        }
+        
+        #Div_tipoSuites{
+            display: flex;
+        }
+
+        #Div_Formulario{
+            display: flex;
+        }
+
+        #Div_SuiteSolteiro{
             
+            margin: auto;
+            margin-top: 15px;
         }
 
-        #div_suitePremium{
+
+        #Div_SuiteCasal{
+            margin: auto;
+            margin-top: 15px;
+        }
+
+        #Div_SuiteMaster{
+            margin: auto;
+            margin-top: 15px;
+        }
+
+        #Div_SuiteSolteiro p{
             
+            margin-left: 90px;
+            font-size: 18px;
+            color: white;
         }
 
+        #Div_SuiteCasal p{
+            margin-left: 110px;
+            font-size: 18px;
+            color: white;
+        }
+
+        #Div_SuiteMaster p{
+            margin-left: 95px;
+            font-size: 18px;
+            color: white;
+        }
+
+        #Div_Formulario{
+            display: flex;
+            
+            margin: auto;
+            margin-top: 20px;
+            max-height: 380px;
+            height: 380px;
+        }
 
         #Div_Form{
-
+            
+            max-height: 200px;
+            max-width: 320px;
+            margin-top: 40px;
+            margin-left: 80px;
         }
+
+        #Div_Form h2{
+            font-size: 32px;
+        }
+
+        #Div_Form p{
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+      #Div_FormData{
+        display: flex;
+        margin: auto;
+        margin-left: 45px;
+      }
+
+      #Div_FormData div{
+        margin-left: 40px;
+      }
+
+      #Div_FormData input{
+        width: 280px;
+      }
+
+      #Div_FormData label{
+        margin-top: 20px;
+      }
+
+      #Campo_Observacoes{
+        height: 150px;
+      }
+
+      #Div_NPessoas{
+        display: flex;
+      }
+
+      #Div_NPessoas input{
+        width: 95px;
+        margin: 0px;
+      }
+
+      #Div_NPessoas label{
+        margin-left: 10px;
+      }
+
+      #Button_Form{
+        font-size: 25px;
+        margin-top: 30px;
+        color: white;
+        background-color: rgb(0, 68, 255, 0.815);
+        border-radius: 10px;
+        border-width: 1px;
+
+      }
+
+
+
+
+      @media screen and (max-width:1200px){ 
+
+        #Saiba_Mais{
+            margin-top: 60px;
+        }
+
+        #Div_TextoDestaque1{
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+
+        #Div_Formulario{
+            display: block;
+            margin-left: auto;
+        }
+
+        #Div_FormData{
+            margin-left: 120px;
+        }
+
+        #Div_Suites{
+            margin: auto;
+        }
+
+        #Div_SuiteSolteiro p{
+            margin-left: 50px;
+            font-size: 15px;
+        }
+
+        #Div_SuiteCasal p{
+            margin-left: 60px;
+            font-size: 15px;
+        }
+
+        #Div_SuiteMaster p{
+            margin-left: 60px;
+            font-size: 15px;
+        }
+
+        #Div_Form{
+            max-height: 200px;
+            
+            width: 800px;
+            margin: auto;
+            margin-top: 40px;
+            
+        }
+
+      }
+
+      @media screen and (max-width:990px){ 
+
+        #Div_FormData{
+            margin-left: 20px;
+        }
+
+      }
+
+      @media screen and (max-width:790px){ 
+
+        #div_Apresentacao{
+            display: block;
+            height: 220px;
+            width: 180px;
+        }
+
+        #div_Apresentacao h2{
+            font-size: 16px;
+            
+        }
+
+
+    }
+      
         /*----------------------- IDs -----------------------*/
     </style>
 
@@ -131,28 +357,23 @@
 <body>
 
     <header>
-        <h1>Logo</h1>
+        <h1>Hoteis Viagens.com</h1>
     </header>
 
-
-
-
-
-
-    
 
       <div id="Div_Apresentacao" class="container">
         <div id="A" class="row">
             <div id="div_Apresentacao" class="col-sm-4">
                 <h2>Sinta o conforto acolhedor de nossas hospedagens</h2>
                 <p>Hospede-se em nossos Hotéis com quartos a partir de R$ 100,00</p>
-                <a href="#">Saiba Mais</a>
+                <a id="Saiba_Mais" href="#">Saiba Mais</a>
                 
             </div>  
             <div class="col-sm-4">
                 <picture>
-                    <source srcset="imagens/SUS_pq.webp" media="(max-width: 800px)">
-                    <img src="imagens/Hotel_2_550x355.jpg" alt="">
+                    <source srcset="imagens/Hotel_2_400x258.jpg" media="(max-width: 790px)">
+                    <source srcset="imagens/Hotel_2_450x290.jpg" media="(max-width: 990px)">
+                    <img src="imagens/Hotel_2_550x355.jpg"  alt="">
                 </picture>
             </div>
         </div>
@@ -160,93 +381,132 @@
 
 
 
-
     <div class="container">
         <div class="row">
 
-            <div>
-                <h2>Por que se Hospedar em nossos Hotéis</h2>
-            </div>
+                <div id="Div_TextoDestaque1">
+                    <h2>Por que se Hospedar em nossos Hotéis ?</h2>
+                </div>
 
             <div id="Div_Info">
 
-                <div>
-                    <img src="imagens/xicara_60x60.png" alt="">
-                </div>
-                <div class="Destaque">
-                    <h3>Delicioso café da Manhã</h3>
-                    <p>Incluso em todas as Diarias</p>
+                <div id="Div_CafeManha" class="col-sm-4">
+                    <div>
+                        <picture>
+                            <source srcset="imagens/xicara_40x40.png" media="(max-width: 1000px)">
+                            <img src="imagens/xicara_60x60.png" alt="">
+                        </picture>
+                    </div>
+                    <div class="Destaque">
+                        <h3>Delicioso café da Manhã</h3>
+                        <p>Incluso em todas as Diarias</p>
+                    </div>
                 </div>
 
 
-                <div>
-                    <img src="imagens/localizacao_2_60x60.png" alt="">
-                </div>
-                <div class="Destaque">
-                    <h3>Facil Acesso</h3>
-                    <p>Perto dos principais Pontos Turisticos</p>
+                <div id="Div_Localizacao" class="col-sm-4">
+                    <div>
+                        <picture>
+                            <source srcset="imagens/localizacao_2_40x40.png" media="(max-width: 1000px)">
+                            <img src="imagens/localizacao_2_60x60.png" alt="">
+                        </picture>
+                    </div>
+                    <div class="Destaque">
+                        <h3>Facil Acesso</h3>
+                        <p>Perto dos principais Pontos Turisticos</p>
+                    </div>
                 </div>
                 
             </div>
 
         </div>
 
+
         <div class="row" >
 
-            <div id="Div_Suites">
-                <div>
-                    <picture>
-                        <img src="imagens/suite_Solteiro_300x207.jpg" alt="" id="Imagem_Refeicao">
-                    </picture>
-                            <p>Suíte Solteiro</p>
+            <div id="Div_Suites" class="col-sm-12">
+                
+                <div class="col-sm-4">
+                    <h2>Nosos quartos</h2>
                 </div>
-                <div>
-                    <picture>
-                        <img src="imagens/suite_Casal_300x200.jpg" alt="" id="Imagem_Refeicao">
-                    </picture>
-                            <p>Suíte Casal</p>
+
+                <div id="Div_tipoSuites">
+                    <div id="Div_SuiteSolteiro" class="col-sm-3">
+                        <picture>
+                            <source srcset="imagens/suite_Solteiro_200x138.jpg" media="(max-width: 990px)">
+                            <source srcset="imagens/suite_Solteiro_250x167.jpg" media="(max-width: 1200px)">
+                            <img src="imagens/suite_Solteiro_300x207.jpg" alt="">
+                        </picture>
+                                <p class="col-sm-7" >Suíte Solteiro</p>
+                    </div>
+                    <div id="Div_SuiteCasal" class="col-sm-3">
+                        <picture>
+                            <source srcset="imagens/suite_Casal_200x133.jpg" media="(max-width: 990px)">
+                            <source srcset="imagens/suite_Casal_250x166.jpg" media="(max-width: 1200px)">
+                            <img src="imagens/suite_Casal_300x200.jpg" alt="">
+                        </picture>
+                                <p class="col-sm-5" >Suíte Casal</p>
+                    </div>
+                    <div id="Div_SuiteMaster" class="col-sm-3">
+                        <picture>
+                            <source srcset="imagens/Suite_Premium_200x133.jpg" media="(max-width: 990px)">
+                            <source srcset="imagens/Suite_Premium._250x167.jpg" media="(max-width: 1200px)">
+                            <img src="imagens/Suite_Premium_300x200.jpg" alt="">
+                        </picture>
+                                <p class="col-sm-6" >Suíte Master</p>
+                    </div>
                 </div>
-                <div>
-                    <picture>
-                        <img src="imagens/Suite_Premium_300x200.jpg" alt="" id="Imagem_Refeicao">
-                    </picture>
-                            <p>Suíte Master</p>
-                </div>
+
             </div>
 
         </div>
     </div>
+   
 
-
-
-    
-        <div class="container">
-            <div class="row">
-                <div>
+    <footer>
+        <div class="container" id="Div_Formulario">
+                <div id="Div_Form" class="col-sm-4">
                     <h2>Faça sua Reserva</h2>
                     <p>Entre em contato conosco informando as datas desejadas. Lhe retornaremos informando a disponibilidade e repassando detalhes da reserva</p>
                 </div>
-                <div id="Div_Form">
-                    <form action="">
-                        <label for="Campo_Nome">Nome</label>
-                        <input type="text" id="Campo_Nome">
-                         <label for="Campo_Email">E-mail</label>
-                        <input type="email" id="Campo_Email">
-                       <label for="Campo_Data">Data de entrada</label>
-                        <input type="date" id="Campo_Data">
-                        <label for="Campo_DataSaida">Data de Saída</label>
-                        <input type="date" id="Campo_DataSaida">
-                        <label for="Campo_Observacoes">Observações</label>
-                        <textarea name="campo_Observacoes" id="Campo_Observacoes"></textarea>
-                        <label for="Campo_NAdultos">Adultos</label>
-                        <input type="number" id="Campo_NAdultos">
-                        <label for="Campo_NCriancas">Crianças</label>
-                        <input type="number" id="Campo_NCriancas">
-                        <button>enviar</button>
+
+                <form action="">
+                <div id="Div_FormData">
+                        <div class="mb-3">
+                            <label for="Campo_Nome" class="form-label">Nome</label>
+                            <input type="text" class="form-control"  id="Campo_Nome">
+                            <label for="Campo_Data" class="form-label">Data de Entrada</label>
+                            <input type="date" class="form-control" id="Campo_Data">
+                            <label for="Campo_Observacoes">Observações</label>
+                            <textarea name="campo_observacoes" id="Campo_Observacoes" class="form-control"></textarea>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="Campo_Email" class="form-label">E-mail</label>
+                            <input type="email" class="form-control" id="Campo_Email">
+                            <label for="Campo_DataSaida" class="form-label">Data de Saída</label>
+                            <input type="date" class="form-control" id="Campo_DataSaida">
+
+                            <div id="Div_NPessoas">
+
+                                <div class="col">
+                                    <label for="Campo_NAdultos" class="form-label">Adultos</label>
+                                    <input type="number" class="form-control" id="Campo_NAdultos">
+                                </div>
+
+                                <div>
+                                    <label for="Campo_NCriancas" class="form-label">Crianças</label>
+                                    <input type="number" class="form-control" id="Campo_NCriancas">
+                                </div>
+                            </div>
+                            <button id="Button_Form" class="col-sm-8">Enviar</button>
+                        </div>
                     </form>
+
                 </div>
-            </div>
         </div>
+
+    </footer>
 
     <script src="bootstrap/js/bootstrap.bundle.min.js">
 
