@@ -1,14 +1,16 @@
+
+
 {
     "cadastros": [
       {
-        "login": "senac",
-        "senha": "senacead",
+        "nome": "murilo",
+        "dataEntrada": "2024-06-18",
+        "observacoes": "aaa",
+        "email": "murilo@gmail.com",
+        "dataSaida": "2024-06-24",
+        "numeroAdultos": 5,
+        "numeroCriancas": 2,
         "id": 1
-      },
-      {
-        "login": "aluno",
-        "senha": "123",
-        "id": 2
       }
     ]
   }           

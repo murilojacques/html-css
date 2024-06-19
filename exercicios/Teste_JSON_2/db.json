@@ -1,14 +1,59 @@
 {
-    "noticias": [
-      {
-        "titulo": "Java",
-        "conteudo": "Linguagem Java",
-        "id": 1
-      },
-      {
-        "titulo": "JSON SERVER",
-        "conteudo": "Utilizado para API ficticia",
-        "id": 2
-      }
-    ]
-  }
+  "noticias": [
+    {
+      "titulo": "Java",
+      "conteudo": "Linguagem Java",
+      "id": "1"
+    },
+    {
+      "titulo": "JSON SERVER",
+      "conteudo": "Utilizado para API ficticia",
+      "id": "2"
+    },
+    {
+      "id": "448c",
+      "titulo": "API Fetch",
+      "conteudo": "Conhecendo a API Fetch"
+    },
+    {
+      "id": "3bb5",
+      "titulo": "API Fetch",
+      "conteudo": "Conhecendo a API Fetch"
+    },
+    {
+      "id": "d7b4",
+      "titulo": "API Fetch",
+      "conteudo": "Conhecendo a API Fetch"
+    },
+    {
+      "id": "d3d7",
+      "titulo": "API Fetch",
+      "conteudo": "Conhecendo a API Fetch"
+    },
+    {
+      "id": "63cd",
+      "titulo": "API Fetch",
+      "conteudo": "Conhecendo a API Fetch"
+    },
+    {
+      "id": "4a92",
+      "titulo": "API Fetch",
+      "conteudo": "Conhecendo a API Fetch"
+    },
+    {
+      "id": "d5de",
+      "titulo": "API Fetch",
+      "conteudo": "Conhecendo a API Fetch"
+    },
+    {
+      "id": "ffb7",
+      "titulo": "API Fetch",
+      "conteudo": "Conhecendo a API Fetch"
+    },
+    {
+      "id": "e368",
+      "titulo": "API Fetch",
+      "conteudo": "Conhecendo a API Fetch"
+    }
+  ]
+}

@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Senac atividade 04</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 
@@ -470,36 +472,36 @@
                     <p>Entre em contato conosco informando as datas desejadas. Lhe retornaremos informando a disponibilidade e repassando detalhes da reserva</p>
                 </div>
 
-                <form action="">
+                <form action="http://localhost:3000/cadastros" method="post">
                 <div id="Div_FormData">
                         <div class="mb-3">
                             <label for="Campo_Nome" class="form-label">Nome</label>
-                            <input type="text" class="form-control"  id="Campo_Nome">
+                            <input type="text" class="form-control"  id="Campo_Nome" name="nome">
                             <label for="Campo_Data" class="form-label">Data de Entrada</label>
-                            <input type="date" class="form-control" id="Campo_Data">
+                            <input type="date" class="form-control" id="Campo_Data" name="dataEntrada" min="2024-06-17">
                             <label for="Campo_Observacoes">Observações</label>
-                            <textarea name="campo_observacoes" id="Campo_Observacoes" class="form-control"></textarea>
+                            <textarea name="campo_observacoes" id="Campo_Observacoes" class="form-control" name="observacoes"></textarea>
                         </div>
 
                         <div class="mb-3">
                             <label for="Campo_Email" class="form-label">E-mail</label>
-                            <input type="email" class="form-control" id="Campo_Email">
+                            <input type="email" class="form-control" id="Campo_Email" name="email">
                             <label for="Campo_DataSaida" class="form-label">Data de Saída</label>
-                            <input type="date" class="form-control" id="Campo_DataSaida">
+                            <input type="date" class="form-control" id="Campo_DataSaida" name="dataSaida">
 
                             <div id="Div_NPessoas">
 
                                 <div class="col">
                                     <label for="Campo_NAdultos" class="form-label">Adultos</label>
-                                    <input type="number" class="form-control" id="Campo_NAdultos">
+                                    <input type="number" class="form-control" id="Campo_NAdultos" name="numeroAdultos">
                                 </div>
 
                                 <div>
                                     <label for="Campo_NCriancas" class="form-label">Crianças</label>
-                                    <input type="number" class="form-control" id="Campo_NCriancas">
+                                    <input type="number" class="form-control" id="Campo_NCriancas" name="numeroCriancas">
                                 </div>
                             </div>
-                            <button id="Button_Form" class="col-sm-8">Enviar</button>
+                            <input type="submit" id="Button_Form" class="col-sm-8" value="Enviar">
                         </div>
                     </form>
 
@@ -510,6 +512,19 @@
 
     <script src="bootstrap/js/bootstrap.bundle.min.js">
 
+
+
+        let nome = document.getElementById('Campo_Nome');
+        let dataEntrada = document.getElementById('Campo_Data');
+        let observacoes = document.getElementById('Campo_Observacoes');
+        let email = document.getElementById('Campo_Email');
+        let dataSaida = document.getElementById('Campo_DataSaida');
+        let numeroAdultos = document.getElementById('Campo_NAdultos');
+        let numeroCriancas = document.getElementById('Campo_NCriancas');
+
+
+
+        
     </script>
 </body>
 </html>
