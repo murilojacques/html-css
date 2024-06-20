@@ -1,16 +1,24 @@
-
-
 {
-    "cadastros": [
-      {
-        "nome": "murilo",
-        "dataEntrada": "2024-06-18",
-        "observacoes": "aaa",
-        "email": "murilo@gmail.com",
-        "dataSaida": "2024-06-24",
-        "numeroAdultos": 5,
-        "numeroCriancas": 2,
-        "id": 1
-      }
-    ]
-  }           
+  "cadastros": [
+    {
+      "nome": "murilo",
+      "dataEntrada": "2024-06-18",
+      "observacoes": "aaa",
+      "email": "murilo@gmail.com",
+      "dataSaida": "2024-06-24",
+      "numeroAdultos": 5,
+      "numeroCriancas": 2,
+      "id": 1
+    },
+    {
+      "nome": "Marcio",
+      "dataEntrada": "2024-06-18",
+      "observacoes": "Salve meus Manos como vai",
+      "email": "marcoso@gmail.com",
+      "dataSaida": "2024-06-24",
+      "numeroAdultos": 5,
+      "numeroCriancas": 2,
+      "id": 2
+    }
+  ]
+}           

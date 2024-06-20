@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <title>Java Script HTTP Requests</title>
+
+    <style>
+        .linhaTabela{
+            padding: 5px;
+            text-align: center;
+            max-width: 250px;
+            max-height: 50px;
+        }
+    
+    </style>
+</head>
+
+<body>
+    <div >
+        <table id="cadastro" border="1">
+            <tr id="Nome_Colunas">
+                <td class="linhaTabela">id</td>
+                <td class="linhaTabela">Nome</td>
+                <td class="linhaTabela">email</td>
+                <td class="linhaTabela">dataEntrada</td>
+                <td class="linhaTabela">dataSaida</td>
+                <td class="linhaTabela">observacoes</td>
+                <td class="linhaTabela">numeroAdultos</td>
+                <td class="linhaTabela">numeroCriancas</td>
+            </tr>
+
+            
+        </table>
+    </div>
+    <script>
+        $.get("http://localhost:3000/cadastros", function(data, status){
+    for (i = 0; i < data.length; i++) {
+        $('#cadastro').append("<tr>"+ 
+            "<td class='linhaTabela'>" + data[i].id + "</td>" + 
+            "<td class='linhaTabela'>" + data[i].nome + "</td>" + 
+            "<td class='linhaTabela'>" + data[i].email + "</td>" + 
+            "<td class='linhaTabela'>" + data[i].dataEntrada + "</td>" + 
+            "<td class='linhaTabela'>" + data[i].dataSaida + "</td>" + 
+            "<td class='linhaTabela'>" + data[i].observacoes + "</td>" +
+            "<td class='linhaTabela'>" + data[i].numeroAdultos + "</td>" + 
+            "<td class='linhaTabela'>" + data[i].numeroCriancas + "</td>" +  
+            "</tr>");
+    }
+});
+    </script>
+</body>
+
+</html>

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <title>Senac atividade 04</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 
@@ -472,6 +473,8 @@
                     <p>Entre em contato conosco informando as datas desejadas. Lhe retornaremos informando a disponibilidade e repassando detalhes da reserva</p>
                 </div>
 
+
+
                 <form action="http://localhost:3000/cadastros" method="post">
                 <div id="Div_FormData">
                         <div class="mb-3">
@@ -485,7 +488,7 @@
 
                         <div class="mb-3">
                             <label for="Campo_Email" class="form-label">E-mail</label>
-                            <input type="email" class="form-control" id="Campo_Email" name="email">
+                            <input type="email" class="form-control" id="Campo_Email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
                             <label for="Campo_DataSaida" class="form-label">Data de Saída</label>
                             <input type="date" class="form-control" id="Campo_DataSaida" name="dataSaida">
 
@@ -505,6 +508,7 @@
                         </div>
                     </form>
 
+
                 </div>
         </div>
 
@@ -513,18 +517,32 @@
     <script src="bootstrap/js/bootstrap.bundle.min.js">
 
 
+        $(document).ready(function () {
+        $("form").submit(function (event) {
 
-        let nome = document.getElementById('Campo_Nome');
-        let dataEntrada = document.getElementById('Campo_Data');
-        let observacoes = document.getElementById('Campo_Observacoes');
-        let email = document.getElementById('Campo_Email');
-        let dataSaida = document.getElementById('Campo_DataSaida');
-        let numeroAdultos = document.getElementById('Campo_NAdultos');
-        let numeroCriancas = document.getElementById('Campo_NCriancas');
+        // Impede o envio normal do formulário
+       event.preventDefault();
 
+        //Serializa os valores de controle de formulário enviados
+        //para serem enviados ao servidor da Web com a solicitação 
+      var formValues = $(this).serialize();
 
+      $.ajax({
+            type: 'POST',
+            url: 'http://localhost:3000/cadastros',
+            data: formValues
+        })
+     .done(function (data) {
+            // enviar mensagem de registro salvo
+            $('#result').append("Registro salvo!");
+        })
+      .fail(function (msg) {
+            // caso a solicitacao de POST tenha falhado
+            alert("Falha no POST" + msg);
+        });
+    });
+});
 
-        
     </script>
 </body>
 </html>
