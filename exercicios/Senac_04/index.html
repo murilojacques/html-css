@@ -475,74 +475,73 @@
 
 
 
-                <form action="http://localhost:3000/cadastros" method="post">
-                <div id="Div_FormData">
+                <form>
+                    <div id="Div_FormData">
                         <div class="mb-3">
                             <label for="Campo_Nome" class="form-label">Nome</label>
-                            <input type="text" class="form-control"  id="Campo_Nome" name="nome">
+                            <input type="text" class="form-control"  id="Campo_Nome" name="nome" required>
                             <label for="Campo_Data" class="form-label">Data de Entrada</label>
-                            <input type="date" class="form-control" id="Campo_Data" name="dataEntrada" min="2024-06-17">
+                            <input type="date" class="form-control" id="Campo_Data" name="dataEntrada" min="2024-06-17" required>
                             <label for="Campo_Observacoes">Observações</label>
                             <textarea name="campo_observacoes" id="Campo_Observacoes" class="form-control" name="observacoes"></textarea>
                         </div>
 
                         <div class="mb-3">
                             <label for="Campo_Email" class="form-label">E-mail</label>
-                            <input type="email" class="form-control" id="Campo_Email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                            <input type="email" class="form-control" id="Campo_Email" name="campo_email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
                             <label for="Campo_DataSaida" class="form-label">Data de Saída</label>
-                            <input type="date" class="form-control" id="Campo_DataSaida" name="dataSaida">
+                            <input type="date" class="form-control" id="Campo_DataSaida" name="dataSaida" required>
 
                             <div id="Div_NPessoas">
 
-                                <div class="col">
+                                <div>
                                     <label for="Campo_NAdultos" class="form-label">Adultos</label>
-                                    <input type="number" class="form-control" id="Campo_NAdultos" name="numeroAdultos">
+                                    <input type="number" class="form-control" id="Campo_NAdultos" name="numeroAdultos" required>
                                 </div>
 
                                 <div>
                                     <label for="Campo_NCriancas" class="form-label">Crianças</label>
-                                    <input type="number" class="form-control" id="Campo_NCriancas" name="numeroCriancas">
+                                    <input type="number" class="form-control" id="Campo_NCriancas" name="numeroCriancas" required>
                                 </div>
                             </div>
-                            <input type="submit" id="Button_Form" class="col-sm-8" value="Enviar">
+                            <input type="submit" id="Button_Form" class="col-sm-8" value="Enviar" onclick="enviar()">
                         </div>
-                    </form>
+                    </div>
+                </form>
 
 
-                </div>
         </div>
+   
 
     </footer>
 
-    <script src="bootstrap/js/bootstrap.bundle.min.js">
+    <script>
 
-
-        $(document).ready(function () {
-        $("form").submit(function (event) {
-
-        // Impede o envio normal do formulário
-       event.preventDefault();
-
-        //Serializa os valores de controle de formulário enviados
-        //para serem enviados ao servidor da Web com a solicitação 
-      var formValues = $(this).serialize();
-
-      $.ajax({
-            type: 'POST',
-            url: 'http://localhost:3000/cadastros',
-            data: formValues
+    function enviar(){
+        fetch("http://localhost:3000/cadastros", {
+        method: "POST",
+        body: JSON.stringify({
+            nome: document.getElementById('Campo_Nome').value,
+            dataEntrada: document.getElementById('Campo_Data').value,
+            observacoes: document.getElementById('Campo_Observacoes').value,
+            email: document.getElementById('Campo_Email').value,
+            dataSaida: document.getElementById('Campo_DataSaida').value,
+            numeroAdultos: document.getElementById('Campo_NAdultos').value,
+            numeroCriancas: document.getElementById('Campo_NCriancas').value
+        }),
+        headers: {
+            "Content-type": "application/json; charset=UTF-8",
+        },
         })
-     .done(function (data) {
-            // enviar mensagem de registro salvo
-            $('#result').append("Registro salvo!");
-        })
-      .fail(function (msg) {
-            // caso a solicitacao de POST tenha falhado
-            alert("Falha no POST" + msg);
-        });
-    });
-});
+        .then((response) => response.json())
+        .then((json) => console.log(json));
+    }
 
     </script>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js">
+
+    </script>
+
 </body>
 </html>
