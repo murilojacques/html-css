@@ -15,10 +15,11 @@
             $nome = $_GET["nome"] ?? "Sem_Nome";
             $sobrenome = $_GET["sobrenome"] ?? "Desconhecido";
             
-            print("<p>É um prazert te conhecer <b>$nome $sobrenome</b>, este é o meu site!</p>")
+            print("<p>É um prazert te conhecer <b>$nome $sobrenome</b>, este é o meu site!</p>");
+            // print("2" + "2");
         ?>
 
-        <p><a href="javascript:history.go(-1)">voltar para pagina anterior</a></p>
+        <p><a href="javascript:history.go(-1)">voltar para página anterior</a></p>
     </main>
 </body>
 </html>
