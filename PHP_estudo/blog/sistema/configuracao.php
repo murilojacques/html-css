@@ -6,9 +6,17 @@
     <title>Document</title>
 </head>
 <body>
-    <?php 
+    <?php
         date_default_timezone_set("America/Sao_Paulo"); 
         // print("<p>Salve Dog!</p>")
+
+
+        //Definicao de Constantes
+        define("SITE_NOME", "UnSet");
+        define("SITE_DESCRICAO", "UnSet - Tecnologia em Sitemas");
+        define("URL_PRODUCAO", "http://unset.com.br");
+        define("URL_DESENVOLVIMENTO", "http://localhost/blog");
+
     ?>
 </body>
 </html>

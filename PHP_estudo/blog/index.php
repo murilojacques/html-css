@@ -13,20 +13,7 @@
         include_once 'helpers.php';
         //include 'configuracao.php';
 
-        $texto = "texto para Resumir";
-        
-        
-        //$total = mb_strlen(trim($texto));
-        // echo "<hr>"; 
-        // echo $resumo = mb_substr($texto, 2, 15);
-        // echo "<hr>";
-        // echo $ocorrencia = mb_strrpos($texto, "i");
-
-        print(saudacao());
-        print("<hr>");
-        print("<br>".resumirTexto($texto, 50));
-        print("<hr>");
-        print(formatarValor(15));
+        echo slug("SÀLVË DÓG,  COMO CÊ TÁ")
     ?>
 </body>
 </html>

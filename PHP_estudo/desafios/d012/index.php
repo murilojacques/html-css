@@ -26,24 +26,34 @@
             $horas = 0;
             $dias = 0;
             $semanas = 0;
+            $meses = 0;
+            $anos = 0;
             $calcSegundos = $totalSegundos;
-
+    
             if($totalSegundos >= 60){
                 $minutos = (int)($totalSegundos/60) ?? 0;
-                $calcSegundos = $calcSegundos%60;
+                $calcSegundos = $calcSegundos % 60;
                 $segundos = $calcSegundos;
             }
             if($minutos >= 60){
                 $horas = (int)($minutos/60) ?? 0;
-                $minutos = $minutos%60;
+                $minutos = $minutos % 60;
             }
             if($horas >= 24){
                 $dias = (int)($horas / 24) ?? 0;
-                $horas = $horas%24;
+                $horas = $horas % 24;
             }
             if($dias >= 7){
                 $semanas = (int)($dias / 7) ?? 0;
-                $dias = $dias%7;
+                $dias = $dias % 7;
+            }
+            if($semanas >= 4){
+                $meses = (int)($semanas / 4) ?? 0;
+                $semanas = $semanas % 4;
+            }
+            if($meses >= 12){
+                $anos = (int)($meses / 12) ?? 0;
+                $meses = $meses % 12;
             }
         
         
