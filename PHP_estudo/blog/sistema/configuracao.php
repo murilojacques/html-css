@@ -7,6 +7,7 @@
 </head>
 <body>
     <?php 
+        date_default_timezone_set("America/Sao_Paulo"); 
         // print("<p>Salve Dog!</p>")
     ?>
 </body>
