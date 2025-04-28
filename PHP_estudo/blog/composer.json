@@ -1,0 +1,19 @@
+{
+    "name": "ceounset/cursophp8",
+    "description": "Estudo do curso de PHP 8",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "sistema\\": "sistema/"
+        },
+        "files": [
+            "sistema/configuracao.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Murilo Jacques"
+        }
+    ],
+    "minimum-stability": "dev"
+}
