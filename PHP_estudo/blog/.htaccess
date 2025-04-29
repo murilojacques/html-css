@@ -1,0 +1,13 @@
+Options -indexes
+
+RewriteEngine On
+
+RewriteBase /PHP_estudo/blog
+
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-l
+
+RewriteRule ^(.*)$ index.php/$1
+
+

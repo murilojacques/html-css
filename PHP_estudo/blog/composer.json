@@ -15,5 +15,9 @@
             "name": "Murilo Jacques"
         }
     ],
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "require": {
+        "pecee/simple-router": "dev-master",
+        "twig/twig": "^3.0"
+    }
 }

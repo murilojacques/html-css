@@ -49,7 +49,7 @@ class Helpers
     }
 
 
-    public static function url(string $url): string
+    public static function url(?string $url = null): string
     {
         $servidor = $_SERVER["SERVER_NAME"];
         $ambiente = ($servidor == 'localhost' ? URL_DESENVOLVIMENTO : URL_PRODUCAO);
