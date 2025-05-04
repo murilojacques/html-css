@@ -2,15 +2,27 @@
 
 namespace sistema\Nucleo;
 
+use Exception;
+
 class Helpers
 {
+
+    public static function redirecionar(?string $url = null): void
+    {
+        header('HTTP/1.1 302 Found');
+
+        $local = ($url ? self::url($url) : self::url());
+        header("Location: {$local}");
+        exit();
+    }
+
 
     public static function validarCpf(string $cpf): bool
     {
         $cpf = self::limparNumero($cpf);
 
         if (mb_strlen($cpf) != 11 || preg_match('/(\d)\1{10}/', $cpf)) {
-            return false;
+            throw new Exception("O CPF deve possuir 11 Digitos");
         }
 
         for ($t = 9; $t < 11; $t++) {
@@ -19,8 +31,7 @@ class Helpers
             }
             $d = ((10 * $d) % 11) % 10;
             if ($cpf[$c] != $d) {
-                print("CPF INVALIDO!");
-                return false;
+                throw new Exception("CPF INVALIDO!");
             } else {
                 print("CPF VALIDO!");
                 return true;
@@ -202,4 +213,3 @@ class Helpers
         return $resumirTexto . "...";
     }
 }
-?>

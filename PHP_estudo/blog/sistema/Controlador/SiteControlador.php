@@ -24,4 +24,10 @@ class SiteControlador extends Controlador
     {
         echo $this->template->renderizar("sobre.html", []);
     }
+
+    public function erro404(): void {
+        echo $this->template->renderizar("404.html", [
+            'titulo' => 'Pagina Não Encontrada'
+        ]);
+    }
 }

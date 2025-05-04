@@ -17,7 +17,13 @@
         define("URL_PRODUCAO", "http://unset.com.br");
         define("URL_DESENVOLVIMENTO", "http://localhost/blog");
 
-        define("URL_SITE", "/PHP_estudo/blog")
+        define("URL_SITE", "/PHP_estudo/blog");
+
+        define("DB_HOST", "localhost");
+        define("DB_PORTA", "3306");
+        define("DB_NOME", "blog");
+        define("DB_USER", "root");
+        define("DB_PASSWORD", "");
 
     ?>
 </body>
