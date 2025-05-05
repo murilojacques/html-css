@@ -15,7 +15,7 @@
         define("SITE_NOME", "UnSet");
         define("SITE_DESCRICAO", "UnSet - Tecnologia em Sitemas");
         define("URL_PRODUCAO", "http://unset.com.br");
-        define("URL_DESENVOLVIMENTO", "http://localhost/blog");
+        define("URL_DESENVOLVIMENTO", "http://localhost:5050/PHP_estudo/blog");
 
         define("URL_SITE", "/PHP_estudo/blog");
 
