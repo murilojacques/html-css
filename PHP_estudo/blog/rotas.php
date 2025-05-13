@@ -10,6 +10,7 @@ try {
     SimpleRouter::get(URL_SITE.'/post/{id}', 'SiteControlador@post');
     SimpleRouter::get(URL_SITE.'/categoria/{id}', 'SiteControlador@categoria');
     SimpleRouter::get(URL_SITE.'/404', 'SiteControlador@erro404');
+    SimpleRouter::post(URL_SITE.'/buscar', 'SiteControlador@buscar');
     SimpleRouter::start();
 } catch (\Pecee\SimpleRouter\Exceptions\NotFoundHttpException $excep) {
     Helpers::redirecionar('404');

@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block conteudo %}
+
+<div class="container my-5">
+    <div class="row">
+        {%if posts%}
+        {% for post in posts %}
+        <div class="col md-3">
+            <div class="card mb-4">
+                <!--<img src="..." class="card-img-top" alt="...">-->
+                <div class="card-body">
+                    <a href="{{url('post/'~post.id)}}">
+                        <h5 class="card-title">id: {{post.id}}, {{post.titulo}}</h5>
+                        <p class="card-text">{{resumirTexto(post.texto, 150)}}</p>
+                    </a>
+                    <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    {% else %}
+    <div class="alert alert-warning" role="alert">
+        Sua Busca não retornou nenhum resultado!
+    </div>
+    {% endif %}
+
+    <div>
+        <div>
+            {% include 'sidebar.html'%}
+        </div>
+    </div>
+
+</div>
+{% endblock %}
