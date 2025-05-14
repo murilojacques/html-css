@@ -1,3 +1,7 @@
+<?php 
+    include("header.html");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +10,8 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="index.php" method="post">
+    <br>
+    <form action="<?php htmlspecialchars($_SERVER["PHP_SELF"])?>" method="post">
         <!--<p><b>Username: </b><input type="text" name="username"></p>-->
         
         <!--{
@@ -22,7 +27,17 @@
             <input type="checkbox" name="foods[]" value="Taco">Taco<br>
         }-->
         
-        <input type="submit" name="submit" value="Submit">
+        <!--{
+            <p><b>Username: </b><input type="text" name="username"></p>
+            <p><b>Age: </b><input type="text" name="age"></p>
+            <p><b>Email: </b><input type="text" name="email"></p>
+        }-->
+
+        {
+            <p><b>Username: </b><input type="text" name="username"></p>
+        }
+
+        <input type="submit" name="login" value="login">
     </form>
     <br>
 </body>
@@ -196,4 +211,79 @@
 
     // echo soma(10, 15);
 }
+
+{
+    // $usernameArray = array("Murilo", "Jacques", "Freitas", "2");
+    // $username = "Murilo Jacques Freitas";
+    // $phone = "123-456-7890";
+
+    // $username = strtolower($username);
+    // $username = strtoupper($username);
+    // $username = str_pad($username, 20, "/");
+    // $phone = str_replace("-", "/", $phone);
+    // $username = strrev($username);
+    // $username = strcmp($username, "Murilo Jacques Freitas");
+    // $count = strlen($username);
+    // $index = strpos($username, " ");
+    // $firstName = substr($username, 0, 6);
+    // $lastName = substr($username, 7);
+    // $fullName = explode(" ", $username);
+    // $username = implode(" ", $usernameArray);
+
+    // echo $username;
+
+    // foreach($fullName as $name){
+    //     echo $name. " ";
+    // }
+}
+
+{
+    // if(isset($_POST['login'])){
+
+    //     $username = filter_input(INPUT_POST, "username", FILTER_SANITIZE_SPECIAL_CHARS);
+    //     // $age = filter_input(INPUT_POST, "age", FILTER_SANITIZE_NUMBER_INT);
+    //     // $email = filter_input(INPUT_POST, "email", FILTER_SANITIZE_EMAIL);
+
+    //     $age = filter_input(INPUT_POST, "age", FILTER_VALIDATE_INT);
+    //     $email = filter_input(INPUT_POST, "email", FILTER_VALIDATE_EMAIL);
+
+    //     if(empty($email)) {          //$age)){
+    //         echo "That number wasn't valid!";
+    //     }
+    //     else{
+    //         echo "Hello {$username} you are {$age} years old";
+    //         echo "<br>Your Emial is: {$email}";
+    //     }
+    // }
+}
+
+{
+    // foreach($_SERVER as $key => $value){
+    //     echo "<br><br>{$key} = {$value}";
+    // }
+}
+
+{
+    // if($_SERVER["REQUEST_METHOD"] == "POST"){
+    //     echo "HELLO";
+    // }
+}
+
+{
+    $password = "50135";
+    $hash = password_hash($password, PASSWORD_DEFAULT);
+    
+    if(password_verify("55135", $hash)){
+        echo $hash;
+    }
+    else{
+        echo "WRONG!";
+    }
+    
+    
+}
+?>
+
+<?php 
+    include("footer.html")
 ?>
